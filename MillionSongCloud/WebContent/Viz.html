@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+
+        <title>Welcome to the Visualization Page</title>
+        
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="icomoon/style.css">
+        <link rel="stylesheet" href="css/style.css">
+
+<!--         <script src="https://cwilso.github.io/AudioContext-MonkeyPatch/AudioContextMonkeyPatch.js"></script> -->
+<!--         <script src="bower_components/underscore/underscore.js"></script> -->
+<!--         <script src="http://d3js.org/d3.geo.projection.v0.min.js"></script> -->
+        <script src="js/d31.js"></script>
+        <script src="js/d3.hexbin.v0.min.js?5c6e4f0"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/mousetrap.js"></script>
+        <script src="js/id3-minimized.js"></script>
+        <script src="js/main.js"></script>
+        <script src="//connect.soundcloud.com/sdk.js"></script>
+        
+
+
+ <!--        <script> $(document).ready(function() { App.init(); }); </script> -->
+    </head>
+
+    <body>
+        <div id="dragover" class="dragover"></div>
+        <div id="tooltip" class="tooltip"></div>
+        <div class="md-modal md-effect-1" id="modal-about">
+            <div class="md-content">
+                <!-- <h3>Credits</h3> -->
+                <div style='line-height: 23px;'>
+                    <i class="icon-headphones"></i>
+        
+
+                    Cloud Technology Assignment-3<a target='_blank' href='#'></a><br/>Contact Us <a target='_blank' href="contact.jsp">here</a>. Any one from the Team will get in touch. Thanks for visiting<br /><br />
+                    <div style='text-align: left;'>Team Members</div>
+                    <a href="#" class="key" style='color: black;'><span>A</span></a>nkit</a><br />
+                    <a href="#" class="key" style='color: black;'><span>C</span></a>hinmay</a><br />
+                    <a href="#" class="key" style='color: black;'><span>K</span></a>rubhanand</a><br />
+                    <a href="#" class="key" style='color: black;'><span>K</span></a>ushagra</a><br />
+                    <a href="#" class="key" style='color: black;'><span>U</span></a>dgam</a><br />
+                    </p>
+
+                    <button class="md-close">dismiss</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="md-modal md-effect-1" id="modal-keyboard">
+            <div class="md-content">
+                <!-- <h3>Keyboard Shortcuts</h3> -->
+                <div>
+                    <i class="icon-keyboard"></i>
+                    <ul>
+                        <li>
+                            <a href="#" class="key"><span>h</span></a>ome Page</a><a href="index.jsp"> <img src="images/home-icon.png" STYLE="WIDTH:20px; HEIGHT:15px" /></a>
+                        </li>
+                        
+                        <li>
+                            <a href="#" class="key"><span>S</span></a>earch Song/Artist</a><a href="search.jsp"> <img src="images/search.png" STYLE="WIDTH:20px; HEIGHT:15px" /></a>
+                        </li>
+                        <li>
+                            <a href="#" class="key"><span>E</span></a>xplore</a><a href="explore.jsp"> <img src="images/explore.jpg" STYLE="WIDTH:20px; HEIGHT:15px" /></a>
+                        </li>
+                                                
+                        <li>
+                            <a href="#" class="key"><span>1</span></a> through <a href="#" class="key"><span>7</span></a> selects a visualization
+                        </li>                        
+                        <li>
+                            <a href="#" class="key" style='width: 58px;'><span>space</span></a> play / pause</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#" class="key"><span>l</span></a>oop</a> random colors and visualizers
+                        </li>
+                        <li>
+                            <a href="#" class="key"><span>&#9650;</span></a><a href="#" class="key"><span>&#9660;</span></a> cycles vizualization</a>
+                        </li>
+                        <li>
+                            <a href="#" class="key"><span>&#9664;</span></a><a href="#" class="key"><span>&#9654;</span></a> cycles color palettes</a>
+                        </li>
+
+                    </ul>
+                    <button class="md-close">dismiss</button>
+                </div>
+            </div>
+        </div>
+        <div class="md-modal md-effect-1" id="modal-soundcloud">
+            <div class="md-content">
+                
+
+                        Simply paste in a link to a <a href='http://soundcloud.com'>SoundCloud</a> artist, track, or playlist and click import:<br />
+
+                         <input id='sc_input' placeholder='ex. https://soundcloud.com/mydevices/launch'>
+                         <button class="sc_import">import audio</button>
+
+                        <br /><br />
+
+                        
+
+                        <pre id='sc_url' style='word-wrap: break-word; text-align: center;'><span></span></pre>
+
+                    </p>
+
+                    <button class="md-close">dismiss</button>
+                </div>
+            </div>
+        </div>
+        <div class='menu menu-open'>
+            <ul>
+            
+            <h4>Album, Artist, Song<br> hierarchical edge bundling</h4>
+			<img src="images/viz6.JPG" STYLE="position:relative; TOP:15px; LEFT:30px; RIGHT:200px;WIDTH:200px; HEIGHT:210px"/>
+				<br><br>
+			<a href="visualizations/album.html">Click Here to see the Visualization</a>
+				
+				<h4>VISUALIZATION 1TOP 10 ARTISTS BY FAMILIARITY AND THEIR
+				SONGS AND ALBUMS</h4>
+				<img src="images/viz1.JPG" STYLE="position:relative; TOP:15px; LEFT:30px; RIGHT:200px;WIDTH:200px; HEIGHT:210px"/>
+				<br><br>
+                <a href="visualizations/Viz1.html">Click Here to see the Visualization</a>
+                <h4>ARTISTS, ALBUMS, SONGS</h4>
+				<img src="images/viz2.JPG" STYLE="position:relative; TOP:15px; LEFT:30px; RIGHT:200px;WIDTH:200px; HEIGHT:210px"/>
+				<br><br>
+			<a href="visualizations/Viz2.html">Click Here to see the Visualization</a>
+			<h4>ARTISTS, ALBUMS, THEIR TEMPO</h4>
+			<img src="images/viz3.JPG" STYLE="position:relative; TOP:15px; LEFT:30px; RIGHT:200px;WIDTH:200px; HEIGHT:210px"/>
+				<br><br>
+			<a href="visualizations/Viz3.html">Click Here to see the Visualization</a>
+			<h4>SONGS INFO WITH ARTISTS ALBUMS ETC</h4>
+			<img src="images/viz4.JPG" STYLE="position:relative; TOP:15px; LEFT:30px; RIGHT:200px;WIDTH:200px; HEIGHT:210px"/>
+				<br><br>
+			<a href="visualizations/Viz4.html">Click Here to see the Visualization</a>
+			<h4>PARALLEL CO-ORDINATES INFO</h4>
+			<img src="images/viz5.JPG" STYLE="position:relative; TOP:15px; LEFT:30px; RIGHT:200px;WIDTH:200px; HEIGHT:210px"/>
+				<br><br>
+			<a href="visualizations/Viz5.html">Click Here to see the Visualization</a></a>
+			
+			</div>
+
+            </ul>
+        </div>
+
+        <div class='wrapper'>
+           <div class='vinyl-container'><i class="icon-vinyl"></i></div>
+
+            <div id="mp3_player" class='fade'>
+                <div id="audio_box"></div> <i id='fullscreen' class="icon-resize-full-alt"></i>
+            </div>
+
+            <div id='progressBar' class='progressBar'></div>
+            <div class='song-metadata'></div>
+            <div class='menu-controls'>
+                <i class="i icon-backward2"></i> 
+                <i class="i icon-pause"></i> 
+                <i class="i icon-forward2"></i> 
+                
+            </div>
+
+            <div class='menu-wide'>
+
+                <div class='options'>
+                    <i class="i icon-menu"></i>
+                    <i class="i icon-question"></i> 
+                    <i class="i icon-keyboard2"></i> 
+                    <i class="i icon-loop-on"><span>randomize visualization: <b>off</b></span></i> 
+<!--                     <i class="i icon-volume-medium"></i> -->
+                    <i class="i icon-github2"></i> 
+                    <i class="i icon-expand"></i> 
+                </div>
+
+                <div class="slider slider-volume"><span>adjust volume</span>
+                    <input min="0" max="100" value="100" id='slider-volume' type="range">
+                </div>
+                <div class="slider"><span>adjust sensitivity</span>
+                    <input min="1" max="100" value="20" id='slider' type="range">
+                </div>
+
+                <div class="dotstyle dotstyle-scaleup">
+                    <ul>
+                        <li class="current"><a class='zero' href="#">0</a></li>
+                        <li><a class='one' href="#">1</a></li>
+                        <li><a class='two' href="#">2</a></li>
+                        <li><a class='three' href="#">3</a></li>
+                        <li><a class='four' href="#">4</a></li>
+                        <li><a class='five' href="#">5</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

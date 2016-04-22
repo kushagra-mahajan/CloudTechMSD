@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+ http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd"
+	version="1.0">
+
+	<persistence-unit name="MillionSongCloud"
+		transaction-type="RESOURCE_LOCAL">
+		<description>Million Song Cloud Project Persistence.xml File</description>
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<class>org.cloud.pojo.Songs</class>
+		<class>org.cloud.pojo.Users</class>
+		<properties>
+			<property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver" />
+			<property name="javax.persistence.jdbc.url"
+				value="jdbc:oracle:thin:@cloudtech3instance3.cypwlu1kkvvy.eu-west-1.rds.amazonaws.com:1521/ORCL" />
+			<property name="javax.persistence.jdbc.user" value="cloud3kushagra" />
+			<property name="javax.persistence.jdbc.password" value="cloudtech3" />
+			<property name="show_sql" value="true" />
+			<property name="hibernate.dialect" value="org.hibernate.dialect.OracleDialect" />
+		</properties>
+	</persistence-unit>
+
+</persistence>
