@@ -4,6 +4,8 @@ This is the code repository for our Cloud Technologies Assignment 3 <strong>(Gro
 
 The Web Application is available here: <a href = "http://javaweb.rp63jizjev.eu-west-1.elasticbeanstalk.com/" >MillionSongCloud</a>
 
+GitHubPage: <a href = "http://kushagra1989.github.io/CloudTechMSD">Git</a>
+
 # Team Members
 1. Ankit Rajendra Gugale
 2. Chinmay Kadam
