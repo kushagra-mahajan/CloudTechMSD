@@ -16,4 +16,8 @@ GitHubPage: <a href = "http://kushagra1989.github.io/CloudTechMSD">Git</a>
 ## Project Description
 
 This project is built on Struts 2 Application framework and Hibernate (JPA). Refer to the Design Document for more details.
-All the other deliverables have been uploaded to the Google Drive and link has been shared on the loop.
+All the other deliverables have been uploaded to the Google Drive and link has been shared on the loop. However, view our application workflow below.
+
+## Application Workflow
+
+![alt tag](https://github.com/kushagra1989/CloudTechMSD/blob/master/Workflow.jpg)
