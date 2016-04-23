@@ -90,13 +90,13 @@
 
 		<div id="wrapper">			
 				<h1>
-					<em> Yet Another Song Database</em>
+					<em>Yet Another Song Database</em>
 					
 				</h1>
 				<h2 STYLE="position:relative; TOP:-10px; LEFT:55px; color: WHITE;">
 				<em> Million song records from the.EchoNest.com</em>
 				</h2>
-				<img src="images/music01.png" STYLE="position:relative; TOP:-45px; LEFT:1000px; WIDTH:375px; HEIGHT:210px"/>
+				<img src="images/music01.png" STYLE="position:relative; TOP:-45px; LEFT:960px; WIDTH:375px; HEIGHT:210px"/>
 
 				<div id="nav">
 					<ul>

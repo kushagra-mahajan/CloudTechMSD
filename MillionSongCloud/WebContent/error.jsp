@@ -73,18 +73,23 @@
 			<div id="logo">
 				<h1>Million Song</h1>
 			</div>
-			<div id="menubar">
-				<ul id="menu">
+			<div id="nav">
+				<ul>
 					<li><a id="home" title="Go to Home Page" href="#"
-						onclick="loadWebPages(this.id);return false;">Home</a></li>
+						onclick="loadWebPages(this.id);return false;"><span>01</span>
+							HOME</a></li>
 					<li><a id="search" title="Go to Search Page" href="#"
-						onclick="loadWebPages(this.id);return false;">Search</a></li>
-					<li><a id="visualization" title="Go to Visualization Page"
-						href="#" onclick="loadWebPages(this.id);return false;">Visualization</a></li>
+						onclick="loadWebPages(this.id);return false;"><span>02</span>
+							SEARCH</a></li>
 					<li><a id="blog" title="Go to Explore Page" href="#"
-						onclick="loadWebPages(this.id);return false;">Explore</a></li>
+						onclick="loadWebPages(this.id);return false;"><span>03</span>
+							EXPLORE</a></li>
+					<li><a id="visualization" title="Go to Visualization Page"
+						href="#" onclick="loadWebPages(this.id);return false;"><span>04</span>
+							VISUALIZATIONS</a></li>
 					<li><a id="contact" title="Go to Contact Page" href="#"
-						onclick="loadWebPages(this.id);return false;">Contact Us</a></li>
+						onclick="loadWebPages(this.id);return false;"><span>05</span>
+							CONTACT US</a></li>
 				</ul>
 			</div>
 		</div>
