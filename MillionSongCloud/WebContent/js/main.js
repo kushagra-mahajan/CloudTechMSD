@@ -103,7 +103,7 @@
 		$('.icon-question').on(click, function() { h.showModal('#modal-about'); });
 		$('.icon-keyboard2').on(click, function() { h.showModal('#modal-keyboard'); });
 		$('.icon-volume-medium').on(click, function() { audio.muted = (audio.muted == true) ? false : true; });
-		$('.icon-github2').on(click, function() { window.open('https://github.com/kushagra1989/CloudTechMSD'); });
+		$('.icon-github2').on(click, function() { window.open('http://kushagra1989.github.io/CloudTechMSD/'); });
 		$('.icon-loop-on').on(click, function() { 
 			$(this).find('b').text(State.loopText[(State.loop)%4]);
 			h.infiniteChange(State.loopDelay[(State.loop++)%4]); 
