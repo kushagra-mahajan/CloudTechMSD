@@ -59,6 +59,7 @@ body {
 	font: 11px arial, sans-serif;
 	color: #464544;
 	padding-bottom: 10px;
+	
 }
 
 /** layout **/
@@ -68,6 +69,7 @@ body {
 	_height: 750px;
 	background: url(images/header.jpg) no-repeat;
   position: relative;
+  
 }
 
 h1 {
@@ -90,8 +92,9 @@ h1 em {
 #nav {
   position: absolute;
   top: 0px;
-  left: 335px;
+  left: 500px;
   width: 750px;
+  float: center;
 }
 #nav li {
   float: left;
@@ -117,15 +120,18 @@ h1 em {
 
 #topcon {
   background: url(images/topcon.jpg) no-repeat;
-  width: 400px;
+  width: 450px;
   position: absolute;
   top: 105px;
-  left: 338px;
+  left: 500px;
+  
   color: #fff;
+  
 }
+
 #topcon-inner {
-  margin: 33px 40px 41px 85px;
-  height: 120px;
+  margin: 20px 40px 41px 85px;
+  height: 150px;
   overflow: auto;
 }
 #topcon h2 {
@@ -135,11 +141,11 @@ h1 em {
 /** Body **/
 
 #content {
-  width: 1200px;
+  width: 1220px;
   position: absolute;
   color: #fff;
   top: 299px;
-  left: 33px;
+  left: 120px;
 }
 #content a {
   color: #fff;
@@ -158,6 +164,8 @@ h1 em {
   width: 300px;
   background: #730F11;
   margin-right: 18px;
+  margin-left: 35px;
+  
 }
 .box-t { background: top url(images/box_t.gif) repeat-x; }
 .box-r { background: right url(images/box_r.gif) repeat-y; }
@@ -201,6 +209,7 @@ p.more {
 }
 
 #new {
+  margin-top: 100px;
   margin-right: 0;
 }
 #new .box-tl {
@@ -212,13 +221,13 @@ p.more {
 }
 
 #body h2 {
-  font-size: 12px;
+  font-size: 14px;
   text-align: right;
   margin-bottom: 1.5em;
   color: #FFFFFF;
 }
 #body h3 {
-  font-size: 9px;
+  font-size: 14px;
   color: #FFEA00;
 }
 #body .more a {

@@ -90,9 +90,13 @@
 
 		<div id="wrapper">			
 				<h1>
-					<em> Million Song DB</em>
+					<em> Yet Another Song Database</em>
+					
 				</h1>
-				<img src="images/music01.png" STYLE="position:relative; TOP:15px; LEFT:30px; WIDTH:375px; HEIGHT:210px"/>
+				<h2 STYLE="position:relative; TOP:-10px; LEFT:55px; color: WHITE;">
+				<em> Million song records from the.EchoNest.com</em>
+				</h2>
+				<img src="images/music01.png" STYLE="position:relative; TOP:-45px; LEFT:1000px; WIDTH:375px; HEIGHT:210px"/>
 
 				<div id="nav">
 					<ul>
@@ -142,43 +146,38 @@
 													<div class="box-bl">
 														<div class="box-tl">
 															<h2>NEWS &amp; EVENTS</h2>
-															<h3>15.04.2016</h3>
+															<h3>23.04.2016</h3>
 															<p>
 																Great Offer! Access songs according to your Mood! Head
-																over to our <a href="#">Explore</a> section to know
+																over to our <a id="blog" title="Go to Explore Page" href="#"
+							onclick="loadWebPages(this.id);return false;">Explore</a> section to know
 																which songs describe the effervescent feelings of your
 																everchanging heart.
 															</p>
-															<p class="more">
-																<a href="#">more...</a>
-															</p>
+															
 															<div class="hr-yellow"></div>
 															<h3>15.04.2016</h3>
 															<p>
 																This website is free, but if you think we could have
 																done a better job by hiring actual developers instead of
-																our esteemed team leader, please think about donating to
+																our team of poor graduates, please think about <a href="#">donating</a> to
 																our page. We don't have a donations page yet, cause we
 																don't know how to set it up :( But hopefully, when we
 																have enough money and we do hire those fancy developers,
-																we can set up the <a href="#"> Donate for Better
-																	Devs</a> page. Oh wait...
+																we can set it up. Oh wait...
 															</p>
-															<p class="more">
-																<a href="#">more...</a>
-															</p>
+															
 															<div class="hr-yellow"></div>
 															<h3>15.04.2016</h3>
 															<p>
 																If you're having problems viewing this site, you
 																probably need to buy a new computer. Please consider
-																giving your valued feedback at our <a href="#">
+																giving your valued feedback at our <a id="contact" title="Go to Contact Page" href="#"
+							onclick="loadWebPages(this.id);return false;">
 																	About Us</a> page, which will tell you we don't accept
 																feedback. You're welcome.
 															</p>
-															<p class="more">
-																<a href="#">more...</a>
-															</p>
+															
 														</div>
 													</div>
 												</div>
@@ -197,18 +196,18 @@
 												<div class="box-br">
 													<div class="box-bl">
 														<div class="box-tl">
-															<h2>Some statistics of hit songs and artists! (We
-																love Statistics)</h2>
+															<h2>Some statistics of hit songs and artists! 
+															</h2>
 															<h3>Hit Songs</h3>
 															<img src="images/pic_1.jpg" width="63" height="91"
 																alt="Pic 1" class="right" />
 															<ul>
-																<li><a href="#">Top hit song</a></li>
-																<li><a href="#">Some random text </a></li>
-																<li><a href="#">La la la la</a></li>
-																<li><a href="#">Why are you reading this?</a></li>
-																<li><a href="#">No really, these are not actual
-																		hit songs </a></li>
+																<li><a href="#">Endless Light - Erik Berglund </a></li>
+																<li><a href="#"> Bitesize - Electro Beats Mix</a></li>
+																<li><a href="#">Raga Anandi Kalyan (Alap_ jor and jhala)</a></li>
+																<li><a href="#">Fall River Legend: Conversation: Morton Gould/Agnes de Mille </a></li>
+																<li><a id="blog" title="Go to Explore Page" href="#"
+							onclick="loadWebPages(this.id);return false;">Check out some more Hit songs!</a></li>
 															</ul>
 															<div class="hr-yellow"></div>
 															<h3>Hit Artists</h3>
@@ -217,11 +216,11 @@
 															<ul>
 																<li><a href="#">Still laughing, cause it says
 																		Hit Artists </a></li>
-																<li><a href="#">Second random text</a></li>
-																<li><a href="#">You're actually reading this
-																		aren't you?</a></li>
-																<li><a href="#">Oh well, go on, read random
-																		text</a></li>
+																<li><a href="#">Kanye West (Du-oh)</a></li>
+																<li><a href="#">Adam Levine</a></li>
+																<li><a href="#">Daft Punk</a></li>
+																<li><a id="blog" title="Go to Explore Page" href="#"
+							onclick="loadWebPages(this.id);return false;">Check out some more Hit Artists!</a></li>
 															</ul>
 														</div>
 													</div>
@@ -254,6 +253,8 @@
 															<img src="images/pic_5.jpg" width="66" height="52"
 																alt="Pic 5" class="right" />
 															<p>Nah, he's not that guy -></p>
+															<li><a id="blog" title="Go to Explore Page" href="#"
+							onclick="loadWebPages(this.id);return false;">But seriously, check out some New Releases here!</a></li>
 														</div>
 													</div>
 												</div>

@@ -122,34 +122,41 @@
 <s:form id="searchForm" name="searchForm" enctype="multipart/form-data">
 	<body>
 		<div id="header">
-			<div id="logo">
+			
+			<div id="nav">
+					<ul>
+						<li><a id="home" title="Go to Home Page" href="#"
+							onclick="loadWebPages(this.id);return false;"><span>01</span>
+								HOME</a></li>
+						<li><a id="search" title="Go to Search Page" href="#"
+							onclick="loadWebPages(this.id);return false;"><span>02</span>
+								SEARCH</a></li>
+						<li><a id="blog" title="Go to Explore Page" href="#"
+							onclick="loadWebPages(this.id);return false;"><span>03</span>
+								EXPLORE</a></li>
+						<li><a id="visualization" title="Go to Visualization Page"
+							href="#" onclick="loadWebPages(this.id);return false;"><span>04</span>
+								VISUALIZATIONS</a></li>
+						<li><a id="contact" title="Go to Contact Page" href="#"
+							onclick="loadWebPages(this.id);return false;"><span>05</span>
+								CONTACT US</a></li>
+					</ul>
+				</div>
+				<div id="logo">
 				<h1>Search your favorite songs or artists</h1>
-			</div>
-			<div id="menubar">
-				<ul id="menu">
-					<li><a id="home" title="Go to Home Page" href="#"
-						onclick="loadWebPages(this.id);return false;">Home</a></li>
-					<li class="current"><a id="search" title="Go to Search Page"
-						href="#" onclick="loadWebPages(this.id);return false;">Search</a></li>
-					<li><a id="visualization" title="Go to Visualization Page"
-						href="#" onclick="loadWebPages(this.id);return false;">Visualization</a></li>
-					<li><a id="blog" title="Go to Explore Page" href="#"
-						onclick="loadWebPages(this.id);return false;">Explore</a></li>
-					<li><a id="contact" title="Go to Contact Page" href="#"
-						onclick="loadWebPages(this.id);return false;">Contact Us</a></li>
-				</ul>
 			</div>
 		</div>
 		<!-- HTML for SEARCH BAR -->
-		<div id="tfheader">
+		<div id="tfheader" style="padding: 0 0 0 10px;">
 			<table class="song_table">
 				<tr>
-					<td><s:text name="Search for Song/Artist" /> &nbsp;&nbsp;<input
+					<td style="padding: 0 0 0 90px;"><s:text name="Search for Song/Artist" /> &nbsp;&nbsp;<input
 						type="text" id="title" class="tftextinput4" name="title" size="40"
 						maxlength="200" value=""><input type="button" value=""
 						class="tfbutton4" id="searchButton" name="searchButton"
 						onClick="submitForm('SearchSongsActionfetchSongDetails')"></td>
-					<td>Total number of records &nbsp;&nbsp;<select
+					<td>Total number of records &nbsp;&nbsp;
+					<select
 						id="searchCount" name="searchCount">
 							<option value="10">10</option>
 							<option value="25">25</option>
@@ -159,8 +166,9 @@
 
 				</tr>
 				<tr>
-					<td class = "tdfont_One"></td>
-					<td class="tdfont_Two"><s:select name="songMood"
+					
+					<td class="tdLabel">
+					<s:select name="songMood"
 							label="Search Songs by Mood" id="songMood" headerKey="-1"
 							headerValue="---Select the song mood---"
 							list="#{'1':'Angry', '2':'Explosive','3':'Plain', '4':'Soft/Quiet','5':'Dark', '6':'Ecstatic','7':'Joyous', '8':'Patriotic'}"
@@ -171,7 +179,7 @@
 		</div>
 		
 		<table class="song_table">
-			<tr></tr>
+			
 			<s:if test="songsList.size() > 0">
 				<tr>
 					<td><span class="text_span"><s:property
@@ -263,8 +271,7 @@
 
 		<s:elseif test="songsList.size() > 0">
 			<table class="workMain_Table" id="songTable" style="display: none">
-				<tr>
-					<td align="center">
+			
 				<tr>
 					<td align="left" colspan="10" class="sub_headingOne">Songs
 						Search Results</td>
@@ -302,8 +309,7 @@
 		<!-- Artists Information Table -->
 		<s:if test="artistsList.size() > 0">
 			<table class="workMain_Table" id="artistTable" style="display: none">
-				<tr>
-					<td align="center">
+				
 				<tr>
 					<td align="left" colspan="10" class="sub_headingOne">Artists
 						Search Results</td>

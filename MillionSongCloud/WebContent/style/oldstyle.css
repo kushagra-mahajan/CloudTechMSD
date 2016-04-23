@@ -122,8 +122,10 @@ ol li {
 	width: 952px;
 	height: 145px;
 }
+ 
 
 #logo {
+	
 	width: 950px;
 	float: left;
 	height: 100px;
@@ -132,8 +134,9 @@ ol li {
 }
 
 #logo h1 {
+	
 	font: normal 350% 'Yanone Kaffeesatz', arial, sans-serif;
-	padding: 5px 0 0 17px;
+	padding: 90px 0px 0 125px;
 	color: #61EC12;
 	float: left;
 }
@@ -189,7 +192,7 @@ ul#menu li a {
 
 ul#menu li.current a {
 	height: 20px;
-	padding: 6px 22px 15px 22px;
+	padding: 16px 22px 15px 22px;
 }
 
 ul#menu li.current a {
@@ -201,6 +204,32 @@ ul#menu li.current a {
 
 ul#menu li a:hover {
 	color: #F14E23;
+}
+#nav {
+  position: absolute;
+  top: 0px;
+  left: 500px;
+  width: 750px;
+  float: center;
+}
+#nav li {
+  float: left;
+  background: url(images/nav_left.gif) no-repeat;
+  list-style: none;
+  padding-left: 10px;
+  padding-right: 20px;
+  padding-top: 45px;
+  line-height: 1.1;
+}
+#nav span {
+  display: block;
+  font-size: 28px;
+}
+#nav a {
+  color: #FFFFFF;
+  font-size: 11px;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 #site_content {
@@ -552,7 +581,23 @@ Fixes submit button height problem in Firefox
 	font-weight: bold;
 	color: #ffffff;
 }
-
+.song_table tr:last-child td {
+	background: -o-linear-gradient(bottom, #ffffff 5%, #bf5a00 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff
+		), color-stop(1, #bf5a00));
+	background: -moz-linear-gradient(center top, #ffffff 5%, #bf5a00 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",
+		endColorstr="#bf5a00");
+	background: -o-linear-gradient(top, #ffffff, bf5a00);
+	background-color: #ffffff;
+	border: 0px solid #000000;
+	text-align: center;
+	border-width: 0px 0px 1px 1px;
+	font-size: 14px;
+	font-family: Trebuchet MS;
+	font-weight: bold;
+	color: #ffffff;
+}
 .song_table tr:first-child:hover td {
 	background: -o-linear-gradient(bottom, #ff7f00 5%, #bf5f00 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ff7f00
