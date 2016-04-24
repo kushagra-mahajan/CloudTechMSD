@@ -6,7 +6,7 @@ The Web Application is available here: <a href = "http://javaweb.rp63jizjev.eu-w
 
 GitHubPage: <a href = "http://kushagra1989.github.io/CloudTechMSD">Git</a>
 
-<strong> You Tube Link: </strong> <a href = "https://youtu.be/ZvHA__ZfJSw">YouTube</a>
+<strong> Feel Free to like us on Youtube </strong> <a href = "https://youtu.be/ZvHA__ZfJSw">YouTube</a>
 
 # Team Members
 1. Ankit Rajendra Gugale
